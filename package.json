@@ -1,0 +1,25 @@
+{
+  "author": "Ersun Warncke <ersun.warncke@gmail.com>",
+  "dependencies": {
+    "immutable-core": "^1.1.0"
+  },
+  "description": "Model views for use with immutable-core-model",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "license": "MIT",
+  "main": "lib/immutable-core-model-view.js",
+  "name": "immutable-core-model-view",
+  "repository": "warncke/immutable-core-model-view",
+  "scripts": {
+    "test": "mocha --harmony-async-await"
+  },
+  "version": "0.0.1"
+}
