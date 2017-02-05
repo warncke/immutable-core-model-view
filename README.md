@@ -14,7 +14,7 @@ immutable-core-model for applying model view operations to models.
 
     // create model view constuctor
     var FooModelView = new ImmutableCoreModelView({
-        each: function (modelView, record, number) {
+        each: function (modelView, record) {
             record.foo = true
         },
         name: 'foo',
@@ -57,7 +57,6 @@ This can be disabled by setting the immutable: false option.
         each: function (args) {
             var modelView = args.modelView
             var record = args.record
-            var number = args.number
 
             return {
                 foo: true,
@@ -101,11 +100,11 @@ sets - e.g. transform an array of records into object keyed by property.
 Record view functions can be executed in parallel and out-of-order by default
 while collection view functions are executed sequentially by default.
 
-Collection views have access to a context object that is shared between all
-each calls while record views do not.
+Collection views have access to a context object and a number that identifies
+the position of the record in the result set. Record views do not.
 
 Collection views have optional post and pre functions that can be used to
-initialize and finalize the context.
+initialize and finalize the context. Record views do not.
 
 ## Creating a collection model view to sum values
 
@@ -208,6 +207,7 @@ Option Name   | Type    | Description                                |
 --------------|---------|--------------------------------------------|
 allowOverride | boolean | allow redefining model view with same name |
 immutable     | boolean | create immutable function/module/methods   |
+meta          | boolean | each function gets record with meta data   |
 name          | string  | name of model view                         |
 register      | boolean | add model view to global register by name  |
 sequential    | boolean | execute each functions in order            |

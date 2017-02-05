@@ -36,6 +36,7 @@ describe('immutable-core-model-view', function () {
             allowOverride: false,
             immutable: true,
             moduleName: 'sumModelView',
+            meta: false,
             name: 'sum',
             sequential: true,
             synchronous: true,
@@ -55,6 +56,7 @@ describe('immutable-core-model-view', function () {
             allowOverride: false,
             immutable: true,
             moduleName: 'sumModelView',
+            meta: false,
             name: 'sum',
             sequential: true,
             synchronous: true,
@@ -89,6 +91,7 @@ describe('immutable-core-model-view', function () {
         assert.deepEqual(sumModelView.modelView, {
             allowOverride: false,
             immutable: false,
+            meta: false,
             name: 'sum',
             sequential: true,
             synchronous: true,
@@ -107,6 +110,7 @@ describe('immutable-core-model-view', function () {
         assert.deepEqual(sum, {
             allowOverride: false,
             immutable: false,
+            meta: false,
             name: 'sum',
             sequential: true,
             synchronous: true,
@@ -144,6 +148,7 @@ describe('immutable-core-model-view', function () {
         assert.deepEqual(sumModelView.modelView, {
             allowOverride: false,
             immutable: true,
+            meta: false,
             module: module,
             moduleName: 'sumModelView',
             name: 'sum',
@@ -164,6 +169,7 @@ describe('immutable-core-model-view', function () {
         assert.deepEqual(sum, {
             allowOverride: false,
             immutable: true,
+            meta: false,
             module: module,
             moduleName: 'sumModelView',
             name: 'sum',
