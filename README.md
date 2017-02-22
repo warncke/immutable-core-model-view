@@ -10,6 +10,11 @@ ImmutableCoreModelView provides only the methods for creating and managing
 model views and is dependent on the execution engine provided by
 immutable-core-model for applying model view operations to models.
 
+## Native async/await
+
+Immutable Core Model View requires Node.js v7.6.0 or greater with native
+async/await support.
+
 ## Creating a simple model view
 
     // create model view constuctor
