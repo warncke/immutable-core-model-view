@@ -32,6 +32,8 @@ describe('immutable-core-model-view', function () {
 
         // validate constructor
         assert.isFunction(sumModelView)
+        assert.strictEqual(sumModelView.class, 'ImmutableCoreModelView')
+        assert.isTrue(sumModelView.ImmutableCoreModelView)
         assert.deepEqual(sumModelView.modelView, {
             allowOverride: false,
             immutable: true,
@@ -66,6 +68,8 @@ describe('immutable-core-model-view', function () {
             post: postFunction,
             register: true,
             args: {properties: ['foo']},
+            class: 'ImmutableCoreModelViewInstance',
+            ImmutableCoreModelViewInstance: true,
         })
 
     })
@@ -120,6 +124,8 @@ describe('immutable-core-model-view', function () {
             post: postFunction,
             register: true,
             args: {properties: ['foo']},
+            class: 'ImmutableCoreModelViewInstance',
+            ImmutableCoreModelViewInstance: true,
         })
 
     })
@@ -181,6 +187,8 @@ describe('immutable-core-model-view', function () {
             post: postFunction,
             register: true,
             args: {properties: ['foo']},
+            class: 'ImmutableCoreModelViewInstance',
+            ImmutableCoreModelViewInstance: true,
         })
 
     })
