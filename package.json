@@ -6,7 +6,7 @@
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
-    "chai": "3.5.0",
+    "chai": "4.0.0",
     "mocha": "3.4.2"
   },
   "directories": {
@@ -22,5 +22,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.3.9"
+  "version": "0.3.10"
 }
