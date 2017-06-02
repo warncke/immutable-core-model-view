@@ -1,12 +1,12 @@
 {
   "author": "Ersun Warncke <ersun.warncke@gmail.com>",
   "dependencies": {
-    "immutable-core": "1.4.1",
+    "immutable-core": "1.4.2",
     "merge-args": "0.2.5"
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
-    "chai": "4.0.0",
+    "chai": "4.0.1",
     "mocha": "3.4.2"
   },
   "directories": {
@@ -22,5 +22,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.3.13"
+  "version": "0.3.14"
 }
