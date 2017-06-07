@@ -1,8 +1,8 @@
 {
   "author": "Ersun Warncke <ersun.warncke@gmail.com>",
   "dependencies": {
-    "immutable-core": "1.4.7",
-    "merge-args": "0.2.7"
+    "immutable-core": "1.4.9",
+    "merge-args": "0.2.8"
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
@@ -22,5 +22,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.3.22"
+  "version": "0.3.23"
 }
