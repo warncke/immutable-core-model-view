@@ -1,7 +1,8 @@
 # immutable-core-model-view
 
 ImmutableCoreModelView provides a class for creating and managing Model
-Views for use with immutable-core-model.
+Views for use with
+[Immutable Core Model](https://www.npmjs.com/package/immutable-core-model).
 
 Simple model views allow model results to be formatted or summarized for
 further processing or display.

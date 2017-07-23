@@ -2,7 +2,10 @@
 
 const ImmutableCoreModelView = require('../lib/immutable-core-model-view')
 const chai = require('chai')
+const chaiSubset = require('chai-subset')
 const immutable = require('immutable-core')
+
+chai.use(chaiSubset)
 
 const assert = chai.assert
 
@@ -34,7 +37,7 @@ describe('immutable-core-model-view', function () {
         assert.isFunction(sumModelView)
         assert.strictEqual(sumModelView.class, 'ImmutableCoreModelView')
         assert.isTrue(sumModelView.ImmutableCoreModelView)
-        assert.deepEqual(sumModelView.modelView, {
+        assert.containSubset(sumModelView.modelView, {
             allowOverride: false,
             immutable: true,
             moduleName: 'sumModelView',
@@ -50,11 +53,14 @@ describe('immutable-core-model-view', function () {
             args: undefined,
         })
 
+        // check that id is defined
+        assert.match(sumModelView.modelView.modelViewId, /^[a-f0-9]{32}$/)
+
         // create a new model view instance with constructor
         var sum = sumModelView('foo')
 
         // validate instance
-        assert.deepEqual(sum, {
+        assert.containSubset(sum, {
             allowOverride: false,
             immutable: true,
             moduleName: 'sumModelView',
@@ -71,6 +77,9 @@ describe('immutable-core-model-view', function () {
             class: 'ImmutableCoreModelViewInstance',
             ImmutableCoreModelViewInstance: true,
         })
+
+        // check that id is defined
+        assert.match(sum.modelViewInstanceId, /^[a-f0-9]{32}$/)
 
     })
 
@@ -92,7 +101,7 @@ describe('immutable-core-model-view', function () {
 
         // validate constructor
         assert.isFunction(sumModelView)
-        assert.deepEqual(sumModelView.modelView, {
+        assert.containSubset(sumModelView.modelView, {
             allowOverride: false,
             immutable: false,
             meta: false,
@@ -111,7 +120,7 @@ describe('immutable-core-model-view', function () {
         var sum = sumModelView('foo')
 
         // validate instance
-        assert.deepEqual(sum, {
+        assert.containSubset(sum, {
             allowOverride: false,
             immutable: false,
             meta: false,
@@ -151,7 +160,7 @@ describe('immutable-core-model-view', function () {
 
         // validate constructor
         assert.isFunction(sumModelView)
-        assert.deepEqual(sumModelView.modelView, {
+        assert.containSubset(sumModelView.modelView, {
             allowOverride: false,
             immutable: true,
             meta: false,
@@ -172,7 +181,7 @@ describe('immutable-core-model-view', function () {
         var sum = sumModelView('foo')
 
         // validate instance
-        assert.deepEqual(sum, {
+        assert.containSubset(sum, {
             allowOverride: false,
             immutable: true,
             meta: false,
