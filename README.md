@@ -212,6 +212,7 @@ for all contexts.
 Option Name   | Type    | Description                                |
 --------------|---------|--------------------------------------------|
 allowOverride | boolean | allow redefining model view with same name |
+cache         | boolean | set to false to disable view caching       |
 immutable     | boolean | create immutable function/module/methods   |
 meta          | boolean | each function gets record with meta data   |
 name          | string  | name of model view                         |
