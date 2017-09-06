@@ -2,10 +2,7 @@
 
 const ImmutableCoreModelView = require('../lib/immutable-core-model-view')
 const chai = require('chai')
-const chaiSubset = require('chai-subset')
 const immutable = require('immutable-core')
-
-chai.use(chaiSubset)
 
 const assert = chai.assert
 
