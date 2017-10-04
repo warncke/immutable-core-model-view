@@ -2,10 +2,10 @@
   "author": "Ersun Warncke <ersun.warncke@gmail.com>",
   "dependencies": {
     "if-defined": "1.0.15",
-    "immutable-core": "2.2.9",
+    "immutable-core": "2.2.10",
     "lodash": "4.17.4",
-    "merge-args": "0.2.14",
-    "stable-id": "1.0.9"
+    "merge-args": "0.2.15",
+    "stable-id": "1.0.10"
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
@@ -25,5 +25,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.4.24"
+  "version": "0.4.25"
 }
