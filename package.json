@@ -4,8 +4,8 @@
     "if-defined": "1.0.16",
     "immutable-core": "2.2.12",
     "lodash": "4.17.4",
-    "merge-args": "0.2.15",
-    "stable-id": "1.0.10"
+    "merge-args": "0.2.16",
+    "stable-id": "1.0.11"
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
@@ -25,5 +25,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.4.27"
+  "version": "0.4.28"
 }
