@@ -2,15 +2,15 @@
   "author": "Ersun Warncke <ersun.warncke@gmail.com>",
   "dependencies": {
     "if-defined": "1.0.18",
-    "immutable-core": "2.3.3",
-    "lodash": "4.17.11",
+    "immutable-core": "3.0.0",
+    "lodash": "4.17.21",
     "merge-args": "0.2.18",
     "stable-id": "1.0.13"
   },
   "description": "Model views for use with immutable-core-model",
   "devDependencies": {
-    "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "chai": "4.3.4",
+    "mocha": "8.3.2"
   },
   "directories": {
     "test": "test"
@@ -25,5 +25,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.5.2"
+  "version": "0.6.0"
 }
